@@ -3,10 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ebenezer — Web Designer</title>
+  <meta name="description" content="Ebenezer Omotoso — web designer building modern websites with WordPress, Elementor and AI-powered workflows.">
+  <title>Ebenezer Omotoso — Web Designer</title>
+  <style>
+    :root {
+      --ink: #1a1714;
+      --paper: #f4efe7;
+      --accent: #c8501e;
+      --muted: #6f675c;
+      --line: #d9d2c5;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    header {
+      padding: 96px 0 64px;
+      border-bottom: 1px solid var(--line);
+    }
+    .kicker {
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: clamp(40px, 8vw, 64px);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+    h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+    .lede {
+      margin-top: 28px;
+      font-size: 19px;
+      color: var(--muted);
+      max-width: 52ch;
+    }
+    section { padding: 56px 0; border-bottom: 1px solid var(--line); }
+    h2 {
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+    .log { list-style: none; }
+    .log li {
+      display: grid;
+      grid-template-columns: 84px 1fr;
+      gap: 20px;
+      padding: 14px 0;
+    }
+    .log .hash {
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      color: var(--accent);
+      padding-top: 2px;
+    }
+    .log .msg strong {
+      display: block;
+      font-weight: 400;
+      font-size: 18px;
+    }
+    .log .msg span {
+      font-size: 15px;
+      color: var(--muted);
+    }
+    footer {
+      padding: 48px 0 96px;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    footer a { color: var(--accent); }
+    @media (max-width: 480px) {
+      header { padding: 64px 0 48px; }
+      .log li { grid-template-columns: 1fr; gap: 4px; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello from my first deployed website, My name is Ebenezer</h1>
-  <p>i am so excited to start this just with Claude and i hope in few month i can be at it best. Built with Git, hosted by GitHub Pages.</p>
+  <div class="wrap">
+    <header>
+      <p class="kicker">ebenwebpro · lagos → the web</p>
+      <h1>Ebenezer Omotoso designs websites — <em>now with an AI in the room.</em></h1>
+      <p class="lede">WordPress and Elementor designer, learning to build world-class websites with AI-powered workflows. This page is my public logbook: deployed with Git, hosted on GitHub Pages, improved one commit at a time.</p>
+    </header>
+
+    <section>
+      <h2>git log --oneline · the journey so far</h2>
+      <ul class="log">
+        <li>
+          <span class="hash">670ee9e</span>
+          <div class="msg"><strong>My first commit</strong><span>Learned what a repository is. Made my first snapshot.</span></div>
+        </li>
+        <li>
+          <span class="hash">a10f7a0</span>
+          <div class="msg"><strong>Branched, merged, survived</strong><span>Parallel timelines stopped being scary.</span></div>
+        </li>
+        <li>
+          <span class="hash">ecf0523</span>
+          <div class="msg"><strong>Merged pull request #1</strong><span>Reviewed my own diff like an art director.</span></div>
+        </li>
+        <li>
+          <span class="hash">f4814e4</span>
+          <div class="msg"><strong>Reverted a bad commit</strong><span>Made a mistake on purpose. Undid it like a professional.</span></div>
+        </li>
+        <li>
+          <span class="hash">HEAD</span>
+          <div class="msg"><strong>Shipped this page with an AI pair-designer</strong><span>Claude wrote the code. I reviewed every line. Git kept the receipts.</span></div>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>built in the open · <a href="https://github.com/ebenwebpro/my-first-website">view source on github</a></p>
+    </footer>
+  </div>
 </body>
 </html>
