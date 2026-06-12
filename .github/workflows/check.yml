@@ -1,0 +1,12 @@
+name: Check website quality
+
+on: push
+
+jobs:
+  lint-html:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download the repo
+        uses: actions/checkout@v4
+      - name: Check HTML for errors
+        run: npx --yes htmlhint index.html
