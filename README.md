@@ -1,4 +1,4 @@
-\# Ebenezer Omotoso — Personal Website
+\# Omotoso Ebenezer — Personal Website
 
 
 
